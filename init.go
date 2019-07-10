@@ -33,24 +33,24 @@ func Sync() error {
 }
 
 //普通日志
-func Debug(args ...interface{}) {
-	l.Debug(args...)
-}
-func Info(args ...interface{}) {
-	l.Info(args...)
-}
-func Warn(args ...interface{}) {
-	l.Warn(args...)
-}
-func Error(args ...interface{}) {
-	l.Error(args...)
-}
-func Panic(args ...interface{}) {
-	l.Panic(args...)
-}
-func Fatal(args ...interface{}) {
-	l.Fatal(args...)
-}
+//func Debug(args ...interface{}) {
+//	l.Debug(args...)
+//}
+//func Info(args ...interface{}) {
+//	l.Info(args...)
+//}
+//func Warn(args ...interface{}) {
+//	l.Warn(args...)
+//}
+//func Error(args ...interface{}) {
+//	l.Error(args...)
+//}
+//func Panic(args ...interface{}) {
+//	l.Panic(args...)
+//}
+//func Fatal(args ...interface{}) {
+//	l.Fatal(args...)
+//}
 
 //需要格式化日志dlog.error("err",err)
 func Debugf(format string, args ...interface{}) {
@@ -73,26 +73,26 @@ func Fatalf(format string, args ...interface{}) {
 }
 
 //key value
-func Debugw(msg string, keysAndValues ...interface{}) {
+func Debug(msg string, keysAndValues ...interface{}) {
 	l.Debugw(msg, keysAndValues...)
 }
 
-func Infow(msg string, keysAndValues ...interface{}) {
+func Info(msg string, keysAndValues ...interface{}) {
 	l.Infow(msg, keysAndValues...)
 }
 
-func Warnw(msg string, keysAndValues ...interface{}) {
+func Warn(msg string, keysAndValues ...interface{}) {
 	l.Warnw(msg, keysAndValues...)
 }
 
-func Errorw(msg string, keysAndValues ...interface{}) {
+func Error(msg string, keysAndValues ...interface{}) {
 	l.Errorw(msg, keysAndValues...)
 }
 
-func Panicw(msg string, keysAndValues ...interface{}) {
+func Panic(msg string, keysAndValues ...interface{}) {
 	l.Panicw(msg, keysAndValues...)
 }
 
-func Fatalw(msg string, keysAndValues ...interface{}) {
+func Fatal(msg string, keysAndValues ...interface{}) {
 	l.Fatalw(msg, keysAndValues...)
 }
