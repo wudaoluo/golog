@@ -14,6 +14,10 @@ const (
 	ZAPLOG backend = iota
 )
 
+func GetLogger() ILog {
+	return l
+}
+
 //设置
 func SetLogger(b backend, opts ...conf.Option) {
 	switch b {
